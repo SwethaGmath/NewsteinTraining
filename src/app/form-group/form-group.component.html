@@ -1,0 +1,20 @@
+<p>
+  form-group works!
+</p>
+
+<form [formGroup] = "profileForm" (ngSubmit)="onSubmit()" >
+  <p>
+    <label>
+      First Name:
+      <input type="text" formControlName = "firstName">
+
+    </label>
+  </p>
+  <label>
+    <p>
+    Last Name:
+    <input type="text" formControlName = "lastName">
+  </p>
+  </label>
+  <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+  </form>

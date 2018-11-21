@@ -1,0 +1,30 @@
+<p>
+  heroes works!
+</p>
+<!-- <p> {{name}} and  {{age}} </p> -->
+
+<h2 [appAppHighlight] ='backGroundColor'> List of the Heroes:</h2>
+<ul class="heroes" >
+  <li *ngFor = 'let hero of heroes' 
+   (click)="onSelect(hero)" >
+    <span class="badge">{{hero.id}}</span> {{hero.name}}
+  </li>
+</ul>
+
+<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+
+<!-- <h2> {{hero.name}} details are :</h2>
+<div> Id: {{hero.id}}</div>
+<div> Name: {{hero.name}}</div> -->
+<!-- <img [src]="imgUrl"/> -->
+
+<!-- <button (click)="display('Hello world')" *ngIf = "flag" > click </button>
+<div *ngFor = "let item of empDetails">
+<p> {{item.name}}</p>
+<p> {{item.age}}</p>
+<p>{{item.salary}}</p>
+
+</div>
+<div>
+  <input type="text" [(ngModel)] = "name" />
+</div> -->

@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h1> {{title}}</h1>
+<!-- <app-heroes [heroDetails]="title" (childName)="childEmitter($event)"></app-heroes> -->
+<!-- <app-heroes></app-heroes> -->
+<h1>Angular Router</h1>
+ <nav><a routerLink="/hero" routerLinkActive="active">Hero</a> 
+   <a routerLink="/heroDetail" routerLinkActive="active">HeroDetail</a>
+
+   <a routerLink="/heroes" routerLinkActive="active">Heroes</a>
+   <a routerLink="/crisis-center" routerLinkActive="active">Crisis Center</a>
+  </nav>  
+   
+<router-outlet></router-outlet>
+
+<!-- <h2 *appUnless="condition" >
+  <p> structural directive example. Condition set to false now</p>
+</h2>
+
+<h2 *appUnless ="!condition" >
+  <p> structural directive example. Condition set to true here </p>
+</h2>
+<app-reactive-forms></app-reactive-forms>
+<app-form-group></app-form-group> -->
+<!-- <app-create-employee></app-create-employee> --> 
